@@ -1,0 +1,43 @@
+{"time":"2025-03-15T18:00:01.137383375+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-15T18:00:01.137657952+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-15T18:05:32.637135984+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-15T18:05:32.637774706+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-15T18:14:14.140946186+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-15T18:14:14.141406255+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-15T18:20:24.68894323+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-15T18:20:24.689114758+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-15T18:20:25.591329339+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-15T18:20:25.591432887+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-15T18:25:08.703325317+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-15T18:25:08.703524998+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-15T18:25:09.778612048+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-15T18:25:32.831988345+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-15T18:25:42.481065817+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-15T18:25:42.481759532+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-15T18:27:39.235014445+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-15T18:27:39.235167348+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-15T18:27:40.2203371+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-15T18:27:40.220632414+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-15T18:29:12.574305807+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-15T18:29:12.57448899+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-15T18:29:13.596133412+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-15T18:29:13.5962354+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-15T18:29:47.491680858+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-15T18:29:47.491981691+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-15T18:29:48.496054813+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-15T18:29:48.496304601+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-15T18:30:46.531103581+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-15T18:30:46.531397994+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-15T18:30:49.066893014+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-15T18:31:02.071071563+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-15T18:31:02.071411383+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-15T18:31:38.703298011+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-15T18:31:38.703542929+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-15T18:31:39.785764037+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-15T18:31:39.785984108+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-15T18:31:49.552615765+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-15T18:31:49.552944734+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-15T18:31:50.471283636+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-15T18:31:50.471385815+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-15T18:33:01.241142325+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-15T18:33:01.241372164+01:00","level":"INFO","msg":"Shutdown complete"}
