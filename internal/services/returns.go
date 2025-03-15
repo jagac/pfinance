@@ -3,6 +3,7 @@ package services
 import (
 	"context"
 	"errors"
+	"fmt"
 	"math"
 	"time"
 
@@ -23,30 +24,33 @@ func NewReturnsCalculator(Repo *repositories.AssetRepository,
 
 // StockReturns calculates the stock P&L grouped by ticker.
 func (r *ReturnsCalculator) StockReturns() (map[string]float32, error) {
-	stocks, err := r.Repo.GetAssetsByType(context.Background(), "stock")
+	// Fetch the list of stock assets
+	stocks, err := r.Repo.GetAssetsByType(context.Background(), "Stock")
 	if err != nil {
 		return nil, err
 	}
+
 	pnlByTicker := make(map[string]float32)
+	stockPrices, ok := r.cache.Get("stockPrice")
+	if !ok {
+		return nil, fmt.Errorf("stock prices not found in cache")
+	}
 
 	for _, stock := range stocks {
-		currentPrice, ok := r.cache.Get(stock.Ticker)
-		if !ok {
-			return nil, err
+		currentPrice, exists := stockPrices.Value.(map[string]float32)[stock.Ticker]
+		if !exists {
+			return nil, fmt.Errorf("price for ticker %s not found in cache", stock.Ticker)
 		}
-		price, ok := currentPrice.Value.(float32)
-		if !ok {
-			return nil, err
-		}
-		pnl := (price - stock.Price) * stock.Amount
+		pnl := (currentPrice - stock.Price) * stock.Amount
 		pnlByTicker[stock.Ticker] += pnl
 	}
+
 	return pnlByTicker, nil
 }
 
 // CalculateInterestPL calculates the interest P&L for assets with interest-bearing properties.
 func (r *ReturnsCalculator) CalculateInterestPL() (map[string]float32, error) {
-	assets, err := r.Repo.GetAssetsByType(context.Background(), "interest")
+	assets, err := r.Repo.GetAssetsByType(context.Background(), "Savings")
 	if err != nil {
 		return nil, err
 	}
@@ -95,7 +99,7 @@ func (r *ReturnsCalculator) CalculateInterestPL() (map[string]float32, error) {
 }
 
 func (r *ReturnsCalculator) GoldReturns() (map[string]float32, error) {
-	gold, err := r.Repo.GetAssetsByType(context.Background(), "gold")
+	gold, err := r.Repo.GetAssetsByType(context.Background(), "Gold")
 	if err != nil {
 		return nil, err
 	}

@@ -45,6 +45,7 @@ func (r *AssetRepository) GetAssetByID(ctx context.Context, id int) (*models.Ass
 func (r *AssetRepository) GetAssetsByType(ctx context.Context, assetType string) ([]*models.Asset, error) {
 	query := `SELECT * FROM assets WHERE type = $1`
 	rows, err := r.DB.QueryContext(ctx, query, assetType)
+
 	if err != nil {
 		return nil, err
 	}
@@ -54,7 +55,7 @@ func (r *AssetRepository) GetAssetsByType(ctx context.Context, assetType string)
 	for rows.Next() {
 		var asset models.Asset
 		err := rows.Scan(&asset.ID, &asset.Type, &asset.Name, &asset.Ticker, &asset.Price, &asset.Amount,
-			&asset.Currency, &asset.InterestRate, &asset.CompoundingFrequency, &asset.InterestStart)
+			&asset.Currency, &asset.InterestRate, &asset.CompoundingFrequency, &asset.InterestStart, &asset.CreatedAt)
 		if err != nil {
 			return nil, err
 		}

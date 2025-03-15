@@ -2,7 +2,9 @@ package jobs
 
 import (
 	"context"
+	"log"
 
+	"github.com/jagac/pfinance/internal/repositories"
 	"github.com/jagac/pfinance/internal/services"
 	"github.com/jagac/pfinance/pkg/worker"
 )
@@ -15,5 +17,26 @@ func FetchGoldJob(fetcher *services.GoldFetcher) worker.Job {
 			return nil, err
 		}
 		return price, nil
+	}
+}
+
+func FetchStocksJob(assetRepository *repositories.AssetRepository, fetcher *services.StockFetcher) worker.Job {
+	return func(c context.Context) (any, error) {
+		stocks, err := assetRepository.GetAssetsByType(c, "Stock")
+		log.Println(stocks)
+		if err != nil {
+			return nil, err
+		}
+
+		tickerAndPrice := make(map[string]float32)
+
+		for _, stock := range stocks {
+			price, err := fetcher.FetchPrice(stock.Ticker)
+			if err != nil {
+				return nil, err
+			}
+			tickerAndPrice[stock.Ticker] = price.Price
+		}
+		return tickerAndPrice, nil
 	}
 }

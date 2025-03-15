@@ -14,4 +14,5 @@ type Asset struct {
 	InterestStart        time.Time `json:"interestStart,omitempty"`
 	InterestRate         float32   `json:"interestRate,omitempty"`
 	CompoundingFrequency string    `json:"compoundingFrequency,omitempty"`
+	CreatedAt            time.Time
 }
