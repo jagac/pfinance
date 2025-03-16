@@ -1,0 +1,455 @@
+{"time":"2025-03-16T19:58:05.037618612+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T19:58:05.037862097+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T19:58:15.038582888+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T19:58:15.038747503+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T19:58:15.077895476+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T19:58:25.037680623+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T19:58:25.037892158+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T19:58:25.040220999+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T19:58:35.03799989+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T19:58:35.038189794+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T19:58:35.040227227+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T19:58:45.038094275+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T19:58:45.038243551+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T19:58:45.040360145+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T19:58:55.037687786+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T19:58:55.037894382+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T19:58:55.040156669+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T19:59:05.038559169+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T19:59:05.038693887+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T19:59:05.040711371+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T19:59:15.038239574+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T19:59:15.038412045+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T19:59:15.040468103+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:00:10.425183427+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T20:00:10.425445366+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T20:00:20.425574404+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T20:00:20.425730714+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T20:00:24.00338109+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:00:30.425415895+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T20:00:30.425599376+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T20:00:31.069447867+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:00:36.014095317+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T20:00:36.014369122+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T20:01:52.611058098+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T20:01:52.612095386+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T20:02:02.612150913+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T20:02:02.612312402+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T20:02:03.993618291+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:02:12.612168142+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T20:02:12.612333439+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T20:02:13.22249116+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:02:22.611909922+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T20:02:22.612114344+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T20:02:22.617505074+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T20:02:23.202802165+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:02:23.618588824+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T20:12:52.811376598+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T20:12:52.811698895+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T20:13:00.912029718+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T20:13:00.912359259+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T20:13:44.193062451+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T20:13:44.193754307+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T20:13:54.194461959+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T20:13:54.194698301+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T20:13:57.306704888+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:14:04.19397522+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T20:14:04.194141319+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T20:14:04.884926099+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:14:14.015145621+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T20:14:14.015551299+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T20:14:50.932701171+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T20:14:50.933353549+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T20:15:00.933771963+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T20:15:00.933973359+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T20:15:01.005732086+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T20:15:01.616219267+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:15:02.007027651+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T20:15:32.02740244+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T20:15:32.027648011+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T20:15:42.028359789+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T20:15:42.028531267+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T20:15:42.628236428+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:15:52.027771357+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T20:15:52.027954829+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T20:15:52.666618713+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:16:02.028084062+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T20:16:02.02831792+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T20:16:02.751188197+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:16:06.011381904+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T20:16:06.011690745+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T20:17:48.297685841+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T20:17:48.297931251+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T20:17:58.298687765+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T20:17:58.298902967+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T20:17:59.289032306+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:18:00.479868467+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T20:18:00.480213018+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T20:18:58.993686852+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T20:18:58.993882405+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T20:19:08.994708361+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T20:19:08.994942349+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T20:19:09.642757822+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:19:09.817915199+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T20:19:09.818228018+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T20:20:09.304320972+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T20:20:09.304498311+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T20:20:19.304665096+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T20:20:19.304863967+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T20:20:22.660258197+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:20:29.30482285+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T20:20:29.305045256+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T20:20:30.030622876+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:20:39.305480592+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T20:20:39.305654616+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T20:20:39.863863773+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:20:41.247096832+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T20:20:41.247509543+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T20:22:45.387890874+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T20:22:45.388599633+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T20:22:55.388803244+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T20:22:55.389014208+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T20:22:56.06162783+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T20:23:01.644617248+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T20:23:01.64498875+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T21:07:36.321693712+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T21:07:36.322475699+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T21:07:46.322418798+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:07:46.322650092+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:07:46.327130327+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:08:14.087207048+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T21:08:14.088603206+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T21:08:24.089639697+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:08:24.089902571+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:08:24.093964024+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:09:46.106137432+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T21:09:46.106445893+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T21:09:56.107210806+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:09:56.107414266+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:09:56.112751721+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:12:34.474968868+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T21:12:34.475835339+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T21:12:44.475412089+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:12:44.475588737+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:12:44.479949936+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:12:54.475976143+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:12:54.476301186+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:12:54.478391499+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:13:04.476251181+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:13:04.47655986+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:13:04.478674181+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:13:14.475343846+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:13:14.476289337+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:13:14.47805998+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:13:24.476214309+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:13:24.476394684+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:13:24.478283504+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:13:28.93080787+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T21:13:28.931144365+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T21:14:07.316500937+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T21:14:07.316772858+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T21:14:17.317225616+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:14:17.317422703+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:14:17.321518963+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:14:27.31756277+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:14:27.317727235+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:14:27.319769508+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:14:37.316860082+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:14:37.317039446+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:14:37.319201589+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:14:47.317198669+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:14:47.317348296+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:14:47.319428619+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:14:57.317218385+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:14:57.317369224+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:14:57.319408472+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:15:07.317908209+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:15:07.318056594+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:15:07.320142488+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:15:17.316904003+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:15:17.317082896+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:15:17.319246512+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:15:27.317014759+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:15:27.31717718+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:15:27.319214915+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:15:37.317192802+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:15:37.31734825+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:15:37.319454486+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:15:47.317293068+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:15:47.317417848+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:15:47.319224341+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:15:57.317163984+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:15:57.317336755+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:15:57.319176331+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:16:07.317044922+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:16:07.317185251+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:16:07.319391993+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:16:17.316986078+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:16:17.317153849+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:16:17.319400056+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:16:27.317286705+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:16:27.317548006+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:16:27.319592163+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:16:37.316757392+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:16:37.316930795+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:16:37.318837178+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:16:47.317475137+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:16:47.317594856+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:16:47.319853013+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:16:57.316898828+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:16:57.317112959+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:16:57.318911824+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:17:07.317067797+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:17:07.31727796+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:17:07.319506559+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:17:17.316592405+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:17:17.325729144+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:17:17.327774014+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:17:27.31741028+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:17:27.317598972+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:17:27.319551171+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:17:37.317226431+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:17:37.317391346+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:17:37.319229659+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:17:47.317849758+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:17:47.318036065+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:17:47.320369849+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:17:57.317445781+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:17:57.317614614+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:17:57.319507671+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:18:07.317357025+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:18:07.317542981+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:18:07.319979259+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:18:17.316579743+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:18:17.316759437+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:18:17.318933243+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:18:27.317291917+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:18:27.317456172+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:18:27.319588981+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:18:37.316688053+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:18:37.316829504+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:18:37.318771053+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:18:47.316643268+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:18:47.31681121+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:18:47.318820818+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:18:57.316933472+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:18:57.317085814+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:18:57.319316898+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:19:07.317892614+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:19:07.318050466+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:19:07.319997356+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:19:17.316852216+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:19:17.317041328+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:19:17.318736607+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:19:27.317518383+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:19:27.317659002+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:19:27.31991273+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:19:37.316629906+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:19:37.316791425+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:19:37.318790054+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:19:47.316645463+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:19:47.316929658+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:19:47.318972673+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:19:57.316683795+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:19:57.316850495+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:19:57.318906722+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:20:07.3167716+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:20:07.317095882+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:20:07.318996773+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:20:17.317052881+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:20:17.317197758+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:20:17.319180807+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:20:26.664187058+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T21:20:26.664551336+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T21:20:29.68981181+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T21:20:29.690082389+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T21:20:39.690305787+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:20:39.690465062+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:20:39.694756118+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:20:44.670638003+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T21:20:44.67098586+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T21:20:46.069237817+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T21:20:46.069488888+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T21:20:56.069404426+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:20:56.069568961+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:20:56.074145742+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:28:04.410093275+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T21:28:04.41047547+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T21:28:14.411056835+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:28:14.411261397+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:28:14.415702819+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:28:24.410486235+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:28:24.410734921+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:28:24.413199833+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:28:34.411039343+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:28:34.411198729+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:28:34.413068323+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:28:41.630384971+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T21:28:41.630726856+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T21:28:43.153713593+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T21:28:43.153950226+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T21:28:53.154238601+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:28:53.154614782+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:28:53.157274983+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:29:07.13267736+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T21:29:07.132978668+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T21:29:17.133569176+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:29:17.133732849+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:29:17.136617484+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:29:27.133857592+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:29:27.134025244+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:29:27.136291007+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:29:37.133822961+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:29:37.133985342+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:29:37.135942702+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:29:47.132895166+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:29:47.145617345+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:29:47.148090952+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:29:57.132894606+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:29:57.133082356+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:29:57.134940545+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:30:04.456263437+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T21:30:04.456537653+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T21:30:06.762530164+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T21:30:06.762830859+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T21:30:16.763070894+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:30:16.763331203+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:30:16.765384868+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:30:26.763303668+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:30:26.763452804+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:30:26.765581103+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:30:36.762908659+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:30:36.763079707+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:30:36.765056777+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:30:46.763521438+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:30:46.763715871+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:30:46.765743199+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:30:56.763622995+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:30:56.76379238+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:30:56.765608191+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:31:06.763295986+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:31:06.763454559+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:31:06.765341906+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:31:16.763074584+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:31:16.76330743+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:31:16.765456459+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:31:26.762552686+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:31:26.762760404+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:31:26.764573387+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:31:27.129290412+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T21:31:27.129604544+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T21:31:28.68638691+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T21:31:28.686630257+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T21:31:38.687238482+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:31:38.687441652+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:31:38.689772828+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:32:24.107889898+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T21:32:24.108112544+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T21:32:34.108562579+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:32:34.1087298+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:32:34.111018365+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:32:44.108102531+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:32:44.108280743+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:32:44.110689208+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:32:54.108910093+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:32:54.109070059+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:32:54.111010197+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:33:04.108294047+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:33:04.108467169+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:33:04.110602569+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:33:14.108730122+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:33:14.108925707+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:33:14.110955494+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:35:10.850740063+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T21:35:10.851068101+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T21:35:20.851646209+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:35:20.851887422+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:35:20.854088708+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:35:30.851336407+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:35:30.851535849+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:35:30.853375476+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:35:40.851380841+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:35:40.851572017+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:35:40.853520219+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:35:50.851451267+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:35:50.851663804+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:35:50.853547504+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:36:00.851286606+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:36:00.851473885+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:36:00.853404364+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:36:10.85159431+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:36:10.851775447+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:36:10.853674695+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:36:20.850763513+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:36:20.851023351+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:36:20.853397127+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:36:30.850954894+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:36:30.851154506+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:36:30.853503117+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:36:40.851737844+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:36:40.851918871+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:36:40.854101366+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:36:50.850844096+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:36:50.851060881+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:36:50.853007629+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:37:00.850942927+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:37:00.851150755+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:37:00.853108767+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:37:10.850797785+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:37:10.850933716+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:37:10.853227261+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:37:20.851036134+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:37:20.851200458+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:37:20.852968729+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:37:30.851281872+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:37:30.85149462+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:37:30.853299248+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:37:40.853218364+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:37:40.853346951+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:37:40.855351382+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:37:50.851553566+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:37:50.851797163+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:37:50.853770463+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:38:00.851555596+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:38:00.851733928+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:38:00.853634079+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:38:10.851333297+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:38:10.851537859+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:38:10.853753542+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:38:20.850835031+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:38:20.85098576+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:38:20.853148314+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:38:30.851301875+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:38:30.851525183+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:38:30.853343085+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:38:40.851230983+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:38:40.851382163+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:38:40.853306349+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:38:50.851579229+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:38:50.851748503+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:38:50.853666658+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:38:53.865860615+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T21:38:53.866088331+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T21:38:55.188544225+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T21:38:55.188816106+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T21:39:05.188775154+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:39:05.189089186+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:39:05.193403782+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:39:15.189633218+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:39:15.189800769+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:39:15.192040882+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:39:25.189746782+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:39:25.189892121+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:39:25.192102166+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:39:35.189073122+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:39:35.189234792+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:39:35.191096137+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:39:44.773146565+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T21:39:44.773481317+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-16T21:39:46.084980688+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-16T21:39:46.085459354+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-16T21:39:56.085535346+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-16T21:39:56.08578271+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-16T21:39:56.088126909+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-16T21:40:05.524928373+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-16T21:40:05.525230783+01:00","level":"INFO","msg":"Shutdown complete"}

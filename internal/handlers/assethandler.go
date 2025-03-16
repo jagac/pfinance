@@ -35,6 +35,15 @@ func (h *AssetHandler) CreateAsset(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(asset)
 }
 
+func (h *AssetHandler) GetAssets(w http.ResponseWriter, r *http.Request) {
+	assets, err := h.Service.Repo.GetAllAssets(r.Context())
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusNotFound)
+		return
+	}
+	json.NewEncoder(w).Encode(assets)
+}
+
 func (h *AssetHandler) GetReturns(w http.ResponseWriter, r *http.Request) {
 	type ReturnsResponse struct {
 		StockReturns map[string]float32 `json:"stockReturns"`
@@ -107,7 +116,6 @@ func (h *AssetHandler) GetReturns(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	// Respond with JSON
 	w.Header().Set("Content-Type", "application/json")
 	if hasError {
 		w.WriteHeader(http.StatusInternalServerError)

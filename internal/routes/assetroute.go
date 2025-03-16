@@ -17,8 +17,8 @@ func NewAssetRouter(handler *handlers.AssetHandler) *AssetRouter {
 }
 
 func (r *AssetRouter) RegisterRoutes(mux *http.ServeMux) *http.ServeMux {
-	mux.Handle("POST /api/assets", http.HandlerFunc(r.handler.CreateAsset))
-	mux.Handle("GET /api/assets/{id}", http.HandlerFunc(r.handler.GetAsset))
+	mux.Handle("POST /api/assets/new", http.HandlerFunc(r.handler.CreateAsset))
+	mux.Handle("GET /api/assets/all", http.HandlerFunc(r.handler.GetAssets))
 	mux.Handle("GET /api/returns", http.HandlerFunc(r.handler.GetReturns))
 
 	return mux

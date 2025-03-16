@@ -2,7 +2,6 @@ package jobs
 
 import (
 	"context"
-	"log"
 
 	"github.com/jagac/pfinance/internal/repositories"
 	"github.com/jagac/pfinance/internal/services"
@@ -23,7 +22,6 @@ func FetchGoldJob(fetcher *services.GoldFetcher) worker.Job {
 func FetchStocksJob(assetRepository *repositories.AssetRepository, fetcher *services.StockFetcher) worker.Job {
 	return func(c context.Context) (any, error) {
 		stocks, err := assetRepository.GetAssetsByType(c, "Stock")
-		log.Println(stocks)
 		if err != nil {
 			return nil, err
 		}
