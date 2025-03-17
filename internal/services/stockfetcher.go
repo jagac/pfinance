@@ -9,6 +9,10 @@ import (
 
 type StockFetcher struct{}
 
+func NewStockFetcher() *StockFetcher {
+	return &StockFetcher{}
+}
+
 type StockResponse struct {
 	Symbol    string    `json:"symbol"`
 	Price     float32   `json:"price"`

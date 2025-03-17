@@ -8,6 +8,9 @@ import (
 )
 
 type GoldFetcher struct{}
+func NewGoldFetcher() *GoldFetcher {
+	return &GoldFetcher{}
+}
 
 type GoldResponse struct {
 	Price     float64   `json:"xauPrice"`

@@ -35,7 +35,6 @@ func main() {
 	cache := cache.NewCache[string, worker.TaskResult]()
 	worker1 := worker.New(logger, cache)
 
-	stockFetcher := services.StockFetcher{}
 	db, err := config.ConnectDB(ctx)
 	if err != nil {
 		log.Fatalf("Error connecting to the database: %v", err)
@@ -49,28 +48,29 @@ func main() {
 	handler := handlers.NewAssetHandler(assetService, returnCalc)
 	assetRouter := routes.NewAssetRouter(handler)
 	assetRouter.RegisterRoutes(mux)
-	routes.RegisterStatic(mux)
 
-	ticker := time.NewTicker(10 * time.Second)
+	ticker := time.NewTicker(24 * time.Hour)
 	defer ticker.Stop()
+	stockFetcher := services.NewStockFetcher()
+	goldFetcher := services.NewGoldFetcher()
 
-	// goldTask := worker.Task{
-	// 	OriginContext: context.Background(),
-	// 	Name:          "goldPrice",
-	// 	Job:           jobs.FetchGoldJob(&goldFetcher),
-	// 	TTL:           23 * time.Hour,
-	// }
+	goldTask := worker.Task{
+		OriginContext: context.Background(),
+		Name:          "goldPrice",
+		Job:           jobs.FetchGoldJob(goldFetcher),
+		TTL:           23 * time.Hour,
+	}
 
 	stockTask := worker.Task{
 		OriginContext: context.Background(),
 		Name:          "stockPrice",
-		Job:           jobs.FetchStocksJob(repo, &stockFetcher),
+		Job:           jobs.FetchStocksJob(repo, stockFetcher),
 		TTL:           23 * time.Hour,
 	}
 
 	go func() {
 		for range ticker.C {
-			// worker1.Enqueue(goldTask)
+			worker1.Enqueue(goldTask)
 			worker1.Enqueue(stockTask)
 		}
 	}()
