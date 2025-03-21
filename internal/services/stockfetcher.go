@@ -20,7 +20,7 @@ type StockResponse struct {
 }
 
 func (s *StockFetcher) FetchPrice(ticker string) (StockResponse, error) {
-	reqUrl := fmt.Sprintf("http://localhost:4000/stock/%s", ticker)
+	reqUrl := fmt.Sprintf("http://stockapi:4000/stock/%s", ticker)
 
 	client := &http.Client{}
 

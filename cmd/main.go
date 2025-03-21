@@ -12,6 +12,7 @@ import (
 
 	"github.com/jagac/pfinance/internal/handlers"
 	"github.com/jagac/pfinance/internal/jobs"
+	"github.com/jagac/pfinance/internal/middleware"
 	"github.com/jagac/pfinance/internal/repositories"
 	"github.com/jagac/pfinance/internal/routes"
 	"github.com/jagac/pfinance/internal/services"
@@ -42,11 +43,17 @@ func main() {
 	defer db.Close()
 	go worker1.Run("Worker")
 
+	loggingConfig := middleware.LoggingConfig{Logger: logger}
+	corsConfig := middleware.CORSConfig{}
+	logMiddleware := loggingConfig.Middleware
+	corsMiddleware := corsConfig.Middleware
+
+
 	repo := repositories.NewAssetRepository(db)
 	assetService := services.NewAssetService(repo)
 	returnCalc := services.NewReturnsCalculator(repo, cache)
 	handler := handlers.NewAssetHandler(assetService, returnCalc)
-	assetRouter := routes.NewAssetRouter(handler)
+	assetRouter := routes.NewAssetRouter(handler, logMiddleware, corsMiddleware)
 	assetRouter.RegisterRoutes(mux)
 
 	ticker := time.NewTicker(24 * time.Hour)

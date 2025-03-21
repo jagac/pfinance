@@ -43,7 +43,7 @@ func LoadConfig() GlobalConfig {
 			Port:              getEnv("PORT", "3000"),
 			DBUser:            getEnv("DB_USER", "localdev"),
 			DBPassword:        getEnv("DB_PASSWORD", "localdev"),
-			DBHost:            getEnv("DB_HOST", "localhost"),
+			DBHost:            getEnv("DB_HOST", "localdevpgs"),
 			DBPort:            getEnv("DB_PORT", "5432"),
 			DBName:            getEnv("DB_NAME", "localdev"),
 			From:              getEnv("FROM", ""),

@@ -1,6 +1,9 @@
+networks:
+  app_network:
+
 services:
- postgres:
-    image: postgres:latest
+  postgres:
+    image: postgres:alpine
     container_name: localdevpgs
     environment:
       POSTGRES_USER: localdev
@@ -8,3 +11,19 @@ services:
       POSTGRES_DB: localdev
     ports:
       - "5432:5432"
+    # networks:
+    #   - app_network
+
+  # pfinance:
+  #   image: ghcr.io/jagac/pfinance:latest
+  #   ports:
+  #     - "3000:3000"
+  #   networks:
+  #     - app_network
+
+  # stockapi:
+  #   image: ghcr.io/jagac/stockapi:latest
+  #   ports:
+  #     - "4000:4000"
+  #   networks:
+  #     - app_network
