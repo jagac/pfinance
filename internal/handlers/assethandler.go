@@ -46,21 +46,19 @@ func (h *AssetHandler) GetAssets(w http.ResponseWriter, r *http.Request) {
 
 func (h *AssetHandler) GetReturns(w http.ResponseWriter, r *http.Request) {
 	type ReturnsResponse struct {
-		StockReturns map[string]float32 `json:"stockReturns"`
-		InterestPL   map[string]float32 `json:"interestPl"`
-		GoldReturns  map[string]float32 `json:"goldReturns"`
-		Error        string             `json:"error,omitempty"`
+		Returns map[int]float32 `json:"returns"`
+		Error   string          `json:"error,omitempty"`
 	}
 
 	var wg sync.WaitGroup
+	var mu sync.Mutex
 
-	stockChan := make(chan map[string]float32)
-	interestChan := make(chan map[string]float32)
-	goldChan := make(chan map[string]float32)
+	returns := make(map[int]float32)
 	errorChan := make(chan error, 3)
 
 	wg.Add(3)
 
+	// Fetch stock returns
 	go func() {
 		defer wg.Done()
 		stockReturns, err := h.ReturnCalculator.StockReturns()
@@ -68,9 +66,15 @@ func (h *AssetHandler) GetReturns(w http.ResponseWriter, r *http.Request) {
 			errorChan <- err
 			return
 		}
-		stockChan <- stockReturns
+		mu.Lock()
+		for id, value := range stockReturns {
+			intID, _ := strconv.Atoi(id)
+			returns[intID] = value
+		}
+		mu.Unlock()
 	}()
 
+	// Fetch interest returns
 	go func() {
 		defer wg.Done()
 		interestPL, err := h.ReturnCalculator.CalculateInterestPL()
@@ -78,9 +82,15 @@ func (h *AssetHandler) GetReturns(w http.ResponseWriter, r *http.Request) {
 			errorChan <- err
 			return
 		}
-		interestChan <- interestPL
+		mu.Lock()
+		for id, value := range interestPL {
+			intID, _ := strconv.Atoi(id)
+			returns[intID] = value
+		}
+		mu.Unlock()
 	}()
 
+	// Fetch gold returns
 	go func() {
 		defer wg.Done()
 		goldReturns, err := h.ReturnCalculator.GoldReturns()
@@ -88,32 +98,26 @@ func (h *AssetHandler) GetReturns(w http.ResponseWriter, r *http.Request) {
 			errorChan <- err
 			return
 		}
-		goldChan <- goldReturns
+		mu.Lock()
+		for id, value := range goldReturns {
+			intID, _ := strconv.Atoi(id)
+			returns[intID] = value
+		}
+		mu.Unlock()
 	}()
 
 	go func() {
 		wg.Wait()
-		close(stockChan)
-		close(interestChan)
-		close(goldChan)
 		close(errorChan)
 	}()
 
 	var response ReturnsResponse
+	response.Returns = returns
 	var hasError bool
 
-	for i := 0; i < 3; i++ {
-		select {
-		case stockReturns := <-stockChan:
-			response.StockReturns = stockReturns
-		case interestPL := <-interestChan:
-			response.InterestPL = interestPL
-		case goldReturns := <-goldChan:
-			response.GoldReturns = goldReturns
-		case err := <-errorChan:
-			hasError = true
-			response.Error += err.Error() + " | "
-		}
+	for err := range errorChan {
+		hasError = true
+		response.Error += err.Error() + " | "
 	}
 
 	w.Header().Set("Content-Type", "application/json")

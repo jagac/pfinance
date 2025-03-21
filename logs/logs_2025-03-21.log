@@ -1,0 +1,59 @@
+{"time":"2025-03-21T19:34:46.383914699+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-21T19:34:46.384366035+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-21T19:34:46.385165498+01:00","level":"ERROR","msg":"HTTP server error:","err":"listen tcp :3000: bind: address already in use"}
+{"time":"2025-03-21T19:34:54.157332939+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-21T19:34:54.157487645+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-21T19:35:16.580687031+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-21T19:35:16.581373504+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-21T19:35:43.940132665+01:00","level":"INFO","msg":"Incoming request","method":"GET","url":"/api/assets/all","remote_addr":"[::1]:49104","start_time":"2025-03-21T19:35:43.940122245+01:00"}
+{"time":"2025-03-21T19:35:43.950609643+01:00","level":"INFO","msg":"Request processed","method":"GET","url":"/api/assets/all","remote_addr":"[::1]:49104","duration":0.010472359,"status":404}
+{"time":"2025-03-21T19:35:43.950871574+01:00","level":"ERROR","msg":"Request resulted in an error","method":"GET","url":"/api/assets/all","remote_addr":"[::1]:49104","status":404}
+{"time":"2025-03-21T19:43:13.531912421+01:00","level":"INFO","msg":"Incoming request","method":"POST","url":"/api/assets/new","remote_addr":"[::1]:58184","start_time":"2025-03-21T19:43:13.531898044+01:00"}
+{"time":"2025-03-21T19:43:13.544399833+01:00","level":"INFO","msg":"Request processed","method":"POST","url":"/api/assets/new","remote_addr":"[::1]:58184","duration":0.012488033,"status":201}
+{"time":"2025-03-21T19:43:21.394702244+01:00","level":"INFO","msg":"Incoming request","method":"GET","url":"/api/assets/all","remote_addr":"[::1]:58194","start_time":"2025-03-21T19:43:21.394684721+01:00"}
+{"time":"2025-03-21T19:43:21.398038539+01:00","level":"INFO","msg":"Request processed","method":"GET","url":"/api/assets/all","remote_addr":"[::1]:58194","duration":0.003334081,"status":200}
+{"time":"2025-03-21T19:43:21.816694684+01:00","level":"INFO","msg":"Incoming request","method":"GET","url":"/api/returns","remote_addr":"[::1]:58194","start_time":"2025-03-21T19:43:21.816681348+01:00"}
+{"time":"2025-03-21T19:43:21.836056247+01:00","level":"INFO","msg":"Request processed","method":"GET","url":"/api/returns","remote_addr":"[::1]:58194","duration":0.019360661,"status":500}
+{"time":"2025-03-21T19:43:21.836242533+01:00","level":"ERROR","msg":"Request resulted in an error","method":"GET","url":"/api/returns","remote_addr":"[::1]:58194","status":500}
+{"time":"2025-03-21T19:45:06.602356353+01:00","level":"INFO","msg":"Incoming request","method":"GET","url":"/api/assets/all","remote_addr":"[::1]:46204","start_time":"2025-03-21T19:45:06.602342497+01:00"}
+{"time":"2025-03-21T19:45:06.604484295+01:00","level":"INFO","msg":"Request processed","method":"GET","url":"/api/assets/all","remote_addr":"[::1]:46204","duration":0.002131509,"status":200}
+{"time":"2025-03-21T19:45:06.847658251+01:00","level":"INFO","msg":"Incoming request","method":"GET","url":"/api/returns","remote_addr":"[::1]:46204","start_time":"2025-03-21T19:45:06.847644816+01:00"}
+{"time":"2025-03-21T19:45:06.864598563+01:00","level":"INFO","msg":"Request processed","method":"GET","url":"/api/returns","remote_addr":"[::1]:46204","duration":0.01693939,"status":500}
+{"time":"2025-03-21T19:45:06.864744452+01:00","level":"ERROR","msg":"Request resulted in an error","method":"GET","url":"/api/returns","remote_addr":"[::1]:46204","status":500}
+{"time":"2025-03-21T19:45:49.454415635+01:00","level":"INFO","msg":"Incoming request","method":"GET","url":"/api/assets/all","remote_addr":"[::1]:35586","start_time":"2025-03-21T19:45:49.454403953+01:00"}
+{"time":"2025-03-21T19:45:49.455976032+01:00","level":"INFO","msg":"Request processed","method":"GET","url":"/api/assets/all","remote_addr":"[::1]:35586","duration":0.001561018,"status":200}
+{"time":"2025-03-21T19:45:49.815538965+01:00","level":"INFO","msg":"Incoming request","method":"GET","url":"/api/returns","remote_addr":"[::1]:35586","start_time":"2025-03-21T19:45:49.815528375+01:00"}
+{"time":"2025-03-21T19:45:49.829579047+01:00","level":"INFO","msg":"Request processed","method":"GET","url":"/api/returns","remote_addr":"[::1]:35586","duration":0.014033359,"status":500}
+{"time":"2025-03-21T19:45:49.829709617+01:00","level":"ERROR","msg":"Request resulted in an error","method":"GET","url":"/api/returns","remote_addr":"[::1]:35586","status":500}
+{"time":"2025-03-21T19:47:43.521153051+01:00","level":"INFO","msg":"Incoming request","method":"GET","url":"/api/assets/all","remote_addr":"[::1]:36622","start_time":"2025-03-21T19:47:43.521138844+01:00"}
+{"time":"2025-03-21T19:47:43.522795005+01:00","level":"INFO","msg":"Request processed","method":"GET","url":"/api/assets/all","remote_addr":"[::1]:36622","duration":0.001642194,"status":200}
+{"time":"2025-03-21T19:47:43.875535979+01:00","level":"INFO","msg":"Incoming request","method":"GET","url":"/api/returns","remote_addr":"[::1]:36622","start_time":"2025-03-21T19:47:43.875523234+01:00"}
+{"time":"2025-03-21T19:47:43.889478636+01:00","level":"INFO","msg":"Request processed","method":"GET","url":"/api/returns","remote_addr":"[::1]:36622","duration":0.013930214,"status":500}
+{"time":"2025-03-21T19:47:43.8896165+01:00","level":"ERROR","msg":"Request resulted in an error","method":"GET","url":"/api/returns","remote_addr":"[::1]:36622","status":500}
+{"time":"2025-03-21T19:47:44.443640979+01:00","level":"INFO","msg":"Incoming request","method":"GET","url":"/api/assets/all","remote_addr":"[::1]:36622","start_time":"2025-03-21T19:47:44.443624758+01:00"}
+{"time":"2025-03-21T19:47:44.444774687+01:00","level":"INFO","msg":"Request processed","method":"GET","url":"/api/assets/all","remote_addr":"[::1]:36622","duration":0.001139399,"status":200}
+{"time":"2025-03-21T19:47:44.68143412+01:00","level":"INFO","msg":"Incoming request","method":"GET","url":"/api/returns","remote_addr":"[::1]:36622","start_time":"2025-03-21T19:47:44.68141838+01:00"}
+{"time":"2025-03-21T19:47:44.698738599+01:00","level":"INFO","msg":"Request processed","method":"GET","url":"/api/returns","remote_addr":"[::1]:36622","duration":0.017304458,"status":500}
+{"time":"2025-03-21T19:47:44.698868838+01:00","level":"ERROR","msg":"Request resulted in an error","method":"GET","url":"/api/returns","remote_addr":"[::1]:36622","status":500}
+{"time":"2025-03-21T19:48:07.807760584+01:00","level":"INFO","msg":"Incoming request","method":"GET","url":"/api/assets/all","remote_addr":"[::1]:36622","start_time":"2025-03-21T19:48:07.80774812+01:00"}
+{"time":"2025-03-21T19:48:07.809183586+01:00","level":"INFO","msg":"Request processed","method":"GET","url":"/api/assets/all","remote_addr":"[::1]:36622","duration":0.001426489,"status":200}
+{"time":"2025-03-21T19:48:08.130958826+01:00","level":"INFO","msg":"Incoming request","method":"GET","url":"/api/returns","remote_addr":"[::1]:36622","start_time":"2025-03-21T19:48:08.130944699+01:00"}
+{"time":"2025-03-21T19:48:08.146628155+01:00","level":"INFO","msg":"Request processed","method":"GET","url":"/api/returns","remote_addr":"[::1]:36622","duration":0.015668929,"status":500}
+{"time":"2025-03-21T19:48:08.146771029+01:00","level":"ERROR","msg":"Request resulted in an error","method":"GET","url":"/api/returns","remote_addr":"[::1]:36622","status":500}
+{"time":"2025-03-21T19:49:29.718350186+01:00","level":"INFO","msg":"Incoming request","method":"GET","url":"/api/assets/all","remote_addr":"[::1]:54112","start_time":"2025-03-21T19:49:29.718340989+01:00"}
+{"time":"2025-03-21T19:49:29.719831871+01:00","level":"INFO","msg":"Request processed","method":"GET","url":"/api/assets/all","remote_addr":"[::1]:54112","duration":0.001481945,"status":200}
+{"time":"2025-03-21T19:49:30.050995941+01:00","level":"INFO","msg":"Incoming request","method":"GET","url":"/api/returns","remote_addr":"[::1]:54112","start_time":"2025-03-21T19:49:30.050983648+01:00"}
+{"time":"2025-03-21T19:49:30.067517162+01:00","level":"INFO","msg":"Request processed","method":"GET","url":"/api/returns","remote_addr":"[::1]:54112","duration":0.016519828,"status":500}
+{"time":"2025-03-21T19:49:30.06767827+01:00","level":"ERROR","msg":"Request resulted in an error","method":"GET","url":"/api/returns","remote_addr":"[::1]:54112","status":500}
+{"time":"2025-03-21T19:51:01.794713557+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-21T19:51:01.794949389+01:00","level":"INFO","msg":"Shutdown complete"}
+{"time":"2025-03-21T19:51:18.920601685+01:00","level":"INFO","msg":"Worker","started":"listening..."}
+{"time":"2025-03-21T19:51:18.920913912+01:00","level":"INFO","msg":"Starting HTTP server on :3000"}
+{"time":"2025-03-21T19:51:42.923730532+01:00","level":"INFO","msg":"New task enqueued","Task":"goldPrice"}
+{"time":"2025-03-21T19:51:42.923877603+01:00","level":"INFO","msg":"New task enqueued","Task":"stockPrice"}
+{"time":"2025-03-21T19:51:42.923936696+01:00","level":"INFO","msg":"Worker","Running task":"goldPrice"}
+{"time":"2025-03-21T19:51:43.430367101+01:00","level":"INFO","msg":"Worker","Task completed":"goldPrice"}
+{"time":"2025-03-21T19:51:43.430529992+01:00","level":"INFO","msg":"Worker","Running task":"stockPrice"}
+{"time":"2025-03-21T19:51:45.580062075+01:00","level":"INFO","msg":"Worker","Task completed":"stockPrice"}
+{"time":"2025-03-21T19:51:49.235241071+01:00","level":"INFO","msg":"Shutting down gracefully..."}
+{"time":"2025-03-21T19:51:49.235499766+01:00","level":"INFO","msg":"Shutdown complete"}
