@@ -28,7 +28,7 @@ services:
       context: ./pfinance-web
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "8080:8080"
     networks:
       - app_network
 
