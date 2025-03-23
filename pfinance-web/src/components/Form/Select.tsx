@@ -1,19 +1,17 @@
 import React from "react";
 
-interface SelectFieldProps {
-  label: string;
-  name: string;
-  value: string | undefined;
-  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
-  options: string[];
-}
-
-const SelectField: React.FC<SelectFieldProps> = ({
+const SelectField = ({
   label,
   name,
   value,
   onChange,
   options,
+}: {
+  label: string;
+  name: string;
+  value: string | undefined;
+  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+  options: string[];
 }) => (
   <div className="mb-6">
     <label className="block text-sm font-semibold text-gray-700 mb-2">

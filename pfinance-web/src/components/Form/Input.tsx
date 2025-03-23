@@ -1,16 +1,6 @@
 import React from "react";
 
-interface InputFieldProps {
-  label: string;
-  name: string;
-  type: string;
-  value: string | number | undefined;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  placeholder?: string;
-  required?: boolean;
-}
-
-const InputField: React.FC<InputFieldProps> = ({
+const InputField = ({
   label,
   name,
   type,
@@ -18,6 +8,14 @@ const InputField: React.FC<InputFieldProps> = ({
   onChange,
   placeholder,
   required = false,
+}: {
+  label: string;
+  name: string;
+  type: string;
+  value: string | number | undefined;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  placeholder?: string;
+  required?: boolean;
 }) => (
   <div className="mb-6">
     <label className="block text-sm font-semibold text-gray-700 mb-2">

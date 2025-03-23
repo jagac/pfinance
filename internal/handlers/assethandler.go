@@ -13,10 +13,11 @@ import (
 type AssetHandler struct {
 	Service          *services.AssetService
 	ReturnCalculator *services.ReturnsCalculator
+	ReturnService    *services.HistoricReturns
 }
 
-func NewAssetHandler(s *services.AssetService, r *services.ReturnsCalculator) *AssetHandler {
-	return &AssetHandler{Service: s, ReturnCalculator: r}
+func NewAssetHandler(s *services.AssetService, r *services.ReturnsCalculator, rs *services.HistoricReturns) *AssetHandler {
+	return &AssetHandler{Service: s, ReturnCalculator: r, ReturnService: rs}
 }
 
 func (h *AssetHandler) CreateAsset(w http.ResponseWriter, r *http.Request) {
@@ -141,4 +142,15 @@ func (h *AssetHandler) GetAsset(w http.ResponseWriter, r *http.Request) {
 	}
 
 	json.NewEncoder(w).Encode(asset)
+}
+
+func (h *AssetHandler) GetMonthlyReturns(w http.ResponseWriter, r *http.Request) {
+	returns, err := h.ReturnCalculator.GetMonthlyReturns()
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(returns)
 }

@@ -1,5 +1,4 @@
-networks:
-  app_network:
+
 
 services:
   postgres:
@@ -11,32 +10,31 @@ services:
       POSTGRES_DB: localdev
     ports:
       - "5432:5432"
-    networks:
-      - app_network
 
-  pfinance:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "3000:3000"
-    networks:
-      - app_network
 
-  pfinance-web:
-    build:
-      context: ./pfinance-web
-      dockerfile: Dockerfile
-    ports:
-      - "8080:8080"
-    networks:
-      - app_network
+  # pfinance:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "3000:3000"
+  #   networks:
+  #     - app_network
 
-  stockapi:
-    build:
-      context: ./stockapi
-      dockerfile: Dockerfile
-    ports:
-      - "4000:4000"
-    networks:
-      - app_network
+  # pfinance-web:
+  #   build:
+  #     context: ./pfinance-web
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "8080:8080"
+  #   networks:
+  #     - app_network
+
+  # stockapi:
+  #   build:
+  #     context: ./stockapi
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "4000:4000"
+  #   networks:
+  #     - app_network

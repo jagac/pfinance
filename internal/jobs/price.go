@@ -38,3 +38,14 @@ func FetchStocksJob(assetRepository *repositories.AssetRepository, fetcher *serv
 		return tickerAndPrice, nil
 	}
 }
+
+func TotalReturnsJob(returnCalc *services.HistoricReturns) worker.Job {
+	return func(c context.Context) (any, error) {
+		err := returnCalc.Calc(c)
+		if err != nil {
+			return nil, err
+		}
+		return nil, nil
+	}
+
+}

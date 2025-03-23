@@ -13,13 +13,14 @@ import (
 )
 
 type ReturnsCalculator struct {
-	Repo  *repositories.AssetRepository
-	cache *cache.Cache[string, worker.TaskResult]
+	Repo     *repositories.AssetRepository
+	cache    *cache.Cache[string, worker.TaskResult]
+	HistRepo *repositories.AssetReturnHistoryRepository
 }
 
 func NewReturnsCalculator(Repo *repositories.AssetRepository,
-	cache *cache.Cache[string, worker.TaskResult]) *ReturnsCalculator {
-	return &ReturnsCalculator{Repo: Repo, cache: cache}
+	cache *cache.Cache[string, worker.TaskResult], HistRepo *repositories.AssetReturnHistoryRepository) *ReturnsCalculator {
+	return &ReturnsCalculator{Repo: Repo, cache: cache, HistRepo: HistRepo}
 }
 
 // StockReturns calculates the stock P&L grouped by ticker.
@@ -118,4 +119,41 @@ func (r *ReturnsCalculator) GoldReturns() (map[string]float32, error) {
 		pnlByName[g.Name] += pnl
 	}
 	return pnlByName, nil
+}
+
+func (r *ReturnsCalculator) TotalReturns() (float32, error) {
+	var total float32
+
+	// Stock Returns
+	stockReturns, err := r.StockReturns()
+	if err != nil {
+		return 0, err
+	}
+	for _, pnl := range stockReturns {
+		total += pnl
+	}
+
+	// Interest Returns
+	interestReturns, err := r.CalculateInterestPL()
+	if err != nil {
+		return 0, err
+	}
+	for _, pnl := range interestReturns {
+		total += pnl
+	}
+
+	// Gold Returns
+	goldReturns, err := r.GoldReturns()
+	if err != nil {
+		return 0, err
+	}
+	for _, pnl := range goldReturns {
+		total += pnl
+	}
+
+	return total, nil
+}
+
+func (r *ReturnsCalculator) GetMonthlyReturns() ([]repositories.MonthlyReturn, error) {
+	return r.HistRepo.GetMonthlyReturns(context.Background())
 }

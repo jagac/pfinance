@@ -11,3 +11,10 @@ CREATE TABLE assets (
     interest_start DATE, -- Only for interest-based assets
     created_at TIMESTAMP DEFAULT NOW()
 );
+
+CREATE TABLE asset_returns (
+    id SERIAL PRIMARY KEY,
+    asset_id INT REFERENCES assets(id) ON DELETE CASCADE,
+    date DATE NOT NULL DEFAULT CURRENT_DATE,
+    returns NUMERIC(18,4) NOT NULL
+);

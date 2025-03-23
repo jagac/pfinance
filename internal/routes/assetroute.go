@@ -24,6 +24,6 @@ func (r *AssetRouter) RegisterRoutes(mux *http.ServeMux) *http.ServeMux {
 	mux.Handle("POST /api/assets/new", r.corsMiddleware(r.logMiddleware(http.HandlerFunc(r.handler.CreateAsset))))
 	mux.Handle("GET /api/assets/all", r.corsMiddleware(r.logMiddleware(http.HandlerFunc(r.handler.GetAssets))))
 	mux.Handle("GET /api/returns", r.corsMiddleware(r.logMiddleware(http.HandlerFunc(r.handler.GetReturns))))
-
+	mux.Handle("GET /api/returns/month", r.corsMiddleware(r.logMiddleware(http.HandlerFunc(r.handler.GetMonthlyReturns))))
 	return mux
 }

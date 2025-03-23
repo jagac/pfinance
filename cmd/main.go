@@ -47,19 +47,22 @@ func main() {
 	corsConfig := middleware.CORSConfig{}
 	logMiddleware := loggingConfig.Middleware
 	corsMiddleware := corsConfig.Middleware
-
+	stockFetcher := services.NewStockFetcher()
+	goldFetcher := services.NewGoldFetcher()
 
 	repo := repositories.NewAssetRepository(db)
+	newRepo := repositories.NewAssetReturnHistoryRepository(db)
 	assetService := services.NewAssetService(repo)
-	returnCalc := services.NewReturnsCalculator(repo, cache)
-	handler := handlers.NewAssetHandler(assetService, returnCalc)
+	returnService := services.NewHistoricReturns(repo, newRepo, goldFetcher, stockFetcher)
+	returnCalc := services.NewReturnsCalculator(repo, cache, newRepo)
+	handler := handlers.NewAssetHandler(assetService, returnCalc, returnService)
 	assetRouter := routes.NewAssetRouter(handler, logMiddleware, corsMiddleware)
 	assetRouter.RegisterRoutes(mux)
 
-	ticker := time.NewTicker(24 * time.Hour)
-	defer ticker.Stop()
-	stockFetcher := services.NewStockFetcher()
-	goldFetcher := services.NewGoldFetcher()
+	hourlyTicker := time.NewTicker(1 * time.Hour)
+	defer hourlyTicker.Stop()
+	dailyTicker := time.NewTicker(24 * time.Hour)
+	defer dailyTicker.Stop()
 
 	goldTask := worker.Task{
 		OriginContext: context.Background(),
@@ -75,10 +78,22 @@ func main() {
 		TTL:           23 * time.Hour,
 	}
 
+	dailyReturnTask := worker.Task{
+		OriginContext: context.Background(),
+		Name:          "dailyReturn",
+		Job:           jobs.TotalReturnsJob(returnService),
+		TTL:           10 * time.Minute,
+	}
+
 	go func() {
-		for range ticker.C {
+		for range hourlyTicker.C {
 			worker1.Enqueue(goldTask)
 			worker1.Enqueue(stockTask)
+		}
+	}()
+	go func() {
+		for range dailyTicker.C {
+			worker1.Enqueue(dailyReturnTask)
 		}
 	}()
 

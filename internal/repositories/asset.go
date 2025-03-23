@@ -95,3 +95,4 @@ func (r *AssetRepository) GetAssetsByType(ctx context.Context, assetType string)
 
 	return assets, nil
 }
+
