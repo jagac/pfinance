@@ -1,5 +1,4 @@
 import React from "react";
-import { FiCalendar } from "react-icons/fi";
 
 export const TopBar = () => {
     const today  = new Date();

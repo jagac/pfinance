@@ -1,9 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import { FiArrowUpRight, FiDollarSign, FiMoreHorizontal } from "react-icons/fi";
+import {  FiDollarSign, FiMoreHorizontal } from "react-icons/fi";
 
 interface Asset {
   id: number;
@@ -26,9 +25,9 @@ export const AssetsTable = () => {
   useEffect(() => {
     const fetchAssets = async () => {
       try {
-        const res = await fetch("https://pfinance.jagactechlab.com/api/assets/all");
+        const res = await fetch("https://pfinanceapi.jagactechlab.com/api/assets/all");
         const data: Asset[] = await res.json();
-        const retRes = await fetch(`https://pfinance.jagactechlab.com/api/returns`);
+        const retRes = await fetch(`https://pfinanceapi.jagactechlab.com/api/returns`);
         const retData = await retRes.json();
         const assetsWithReturns = data.map(asset => ({
           ...asset,

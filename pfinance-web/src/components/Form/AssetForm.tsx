@@ -40,7 +40,7 @@ export default function AddAssetForm() {
     };
 
     const response = await fetch(
-      "https://pfinance.jagactechlab.com/api/assets/new",
+      "https://pfinanceapi.jagactechlab.com/api/assets/new",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

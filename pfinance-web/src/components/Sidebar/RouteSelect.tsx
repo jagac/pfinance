@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { IconType } from "react-icons";
 import { FiList, FiHome } from "react-icons/fi";
