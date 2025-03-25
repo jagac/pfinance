@@ -59,8 +59,22 @@ func (h *AssetHandler) GetReturns(w http.ResponseWriter, r *http.Request) {
 	returns := make(map[int]float32)
 	errorChan := make(chan error, 3)
 
-	wg.Add(2)
+	wg.Add(3)
 
+	// Fetch stock returns
+	go func() {
+		defer wg.Done()
+		stockReturns, err := h.ReturnCalculator.StockReturns()
+		if err != nil {
+			errorChan <- err
+			return
+		}
+		mu.Lock()
+		for id, value := range stockReturns {
+			returns[id] = value
+		}
+		mu.Unlock()
+	}()
 
 	// Fetch interest returns
 	go func() {
