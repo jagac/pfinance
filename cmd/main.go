@@ -59,7 +59,7 @@ func main() {
 	assetRouter := routes.NewAssetRouter(handler, logMiddleware, corsMiddleware)
 	assetRouter.RegisterRoutes(mux)
 
-	hourlyTicker := time.NewTicker(1 * time.Hour)
+	hourlyTicker := time.NewTicker(31 * time.Minute)
 	defer hourlyTicker.Stop()
 	dailyTicker := time.NewTicker(24 * time.Hour)
 	defer dailyTicker.Stop()

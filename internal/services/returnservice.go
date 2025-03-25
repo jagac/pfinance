@@ -34,11 +34,15 @@ func (r *ReturnsCalculator) StockReturns() (map[int]float32, error) {
 	pnlByTicker := make(map[int]float32)
 	stockPrices, ok := r.cache.Get("stockPrice")
 	if !ok {
-		return nil, fmt.Errorf("stock prices not found in cache")
+		return nil, fmt.Errorf("stock prices cache not found")
+	}
+	stockPricesRaw, ok := stockPrices.Value.(map[string]float32)
+	if !ok {
+		return nil, fmt.Errorf("stock prices cache is not in expected format")
 	}
 
 	for _, stock := range stocks {
-		currentPrice, exists := stockPrices.Value.(map[int]float32)[stock.ID]
+		currentPrice, exists := stockPricesRaw[stock.Ticker] // Use Ticker instead of ID
 		if !exists {
 			return nil, fmt.Errorf("price for ticker %s not found in cache", stock.Ticker)
 		}
