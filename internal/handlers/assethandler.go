@@ -2,6 +2,8 @@ package handlers
 
 import (
 	"encoding/json"
+	"fmt"
+	"log"
 	"net/http"
 	"strconv"
 	"sync"
@@ -57,22 +59,8 @@ func (h *AssetHandler) GetReturns(w http.ResponseWriter, r *http.Request) {
 	returns := make(map[int]float32)
 	errorChan := make(chan error, 3)
 
-	wg.Add(3)
+	wg.Add(2)
 
-	// Fetch stock returns
-	go func() {
-		defer wg.Done()
-		stockReturns, err := h.ReturnCalculator.StockReturns()
-		if err != nil {
-			errorChan <- err
-			return
-		}
-		mu.Lock()
-		for id, value := range stockReturns {
-			returns[id] = value
-		}
-		mu.Unlock()
-	}()
 
 	// Fetch interest returns
 	go func() {
@@ -93,6 +81,8 @@ func (h *AssetHandler) GetReturns(w http.ResponseWriter, r *http.Request) {
 	go func() {
 		defer wg.Done()
 		goldReturns, err := h.ReturnCalculator.GoldReturns()
+		log.Println(goldReturns)
+		fmt.Println(goldReturns)
 		if err != nil {
 			errorChan <- err
 			return

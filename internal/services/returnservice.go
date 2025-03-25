@@ -115,11 +115,14 @@ func (r *ReturnsCalculator) GoldReturns() (map[int]float32, error) {
 		if !ok {
 			return nil, err
 		}
-		price, ok := currentPrice.Value.(float32)
+
+		price, ok := currentPrice.Value.(GoldResponse)
 		if !ok {
 			return nil, err
 		}
-		pnl := (price - g.Price) * g.Amount
+
+		pnl := (float32(price.Price) - g.Price) * g.Amount
+
 		pnlByName[g.ID] += pnl
 	}
 	return pnlByName, nil

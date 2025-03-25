@@ -81,7 +81,7 @@ func (r *AssetRepository) GetAssetsByType(ctx context.Context, assetType string)
 	var assets []*models.Asset
 	for rows.Next() {
 		var asset models.Asset
-		err := rows.Scan(&asset.ID, &asset.Type, &asset.Name, &asset.Ticker, &asset.Price, &asset.Amount,
+		err := rows.Scan(&asset.ID, &asset.Name, &asset.Type, &asset.Ticker, &asset.Price, &asset.Amount,
 			&asset.Currency, &asset.InterestRate, &asset.CompoundingFrequency, &asset.InterestStart, &asset.CreatedAt)
 		if err != nil {
 			return nil, err
@@ -95,4 +95,3 @@ func (r *AssetRepository) GetAssetsByType(ctx context.Context, assetType string)
 
 	return assets, nil
 }
-

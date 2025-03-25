@@ -68,14 +68,14 @@ func main() {
 		OriginContext: context.Background(),
 		Name:          "goldPrice",
 		Job:           jobs.FetchGoldJob(goldFetcher),
-		TTL:           30 * time.Minute,
+		TTL:           29 * time.Minute,
 	}
 
 	stockTask := worker.Task{
 		OriginContext: context.Background(),
 		Name:          "stockPrice",
 		Job:           jobs.FetchStocksJob(repo, stockFetcher),
-		TTL:           30 * time.Minute,
+		TTL:           29 * time.Minute,
 	}
 
 	dailyReturnTask := worker.Task{
