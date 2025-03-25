@@ -69,8 +69,7 @@ func (h *AssetHandler) GetReturns(w http.ResponseWriter, r *http.Request) {
 		}
 		mu.Lock()
 		for id, value := range stockReturns {
-			intID, _ := strconv.Atoi(id)
-			returns[intID] = value
+			returns[id] = value
 		}
 		mu.Unlock()
 	}()
@@ -85,8 +84,7 @@ func (h *AssetHandler) GetReturns(w http.ResponseWriter, r *http.Request) {
 		}
 		mu.Lock()
 		for id, value := range interestPL {
-			intID, _ := strconv.Atoi(id)
-			returns[intID] = value
+			returns[id] = value
 		}
 		mu.Unlock()
 	}()
@@ -101,8 +99,7 @@ func (h *AssetHandler) GetReturns(w http.ResponseWriter, r *http.Request) {
 		}
 		mu.Lock()
 		for id, value := range goldReturns {
-			intID, _ := strconv.Atoi(id)
-			returns[intID] = value
+			returns[id] = value
 		}
 		mu.Unlock()
 	}()

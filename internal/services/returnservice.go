@@ -24,39 +24,39 @@ func NewReturnsCalculator(Repo *repositories.AssetRepository,
 }
 
 // StockReturns calculates the stock P&L grouped by ticker.
-func (r *ReturnsCalculator) StockReturns() (map[string]float32, error) {
+func (r *ReturnsCalculator) StockReturns() (map[int]float32, error) {
 	// Fetch the list of stock assets
 	stocks, err := r.Repo.GetAssetsByType(context.Background(), "Stock")
 	if err != nil {
 		return nil, err
 	}
 
-	pnlByTicker := make(map[string]float32)
+	pnlByTicker := make(map[int]float32)
 	stockPrices, ok := r.cache.Get("stockPrice")
 	if !ok {
 		return nil, fmt.Errorf("stock prices not found in cache")
 	}
 
 	for _, stock := range stocks {
-		currentPrice, exists := stockPrices.Value.(map[string]float32)[stock.Ticker]
+		currentPrice, exists := stockPrices.Value.(map[int]float32)[stock.ID]
 		if !exists {
 			return nil, fmt.Errorf("price for ticker %s not found in cache", stock.Ticker)
 		}
 		pnl := (currentPrice - stock.Price) * stock.Amount
-		pnlByTicker[stock.Ticker] += pnl
+		pnlByTicker[stock.ID] += pnl
 	}
 
 	return pnlByTicker, nil
 }
 
 // CalculateInterestPL calculates the interest P&L for assets with interest-bearing properties.
-func (r *ReturnsCalculator) CalculateInterestPL() (map[string]float32, error) {
+func (r *ReturnsCalculator) CalculateInterestPL() (map[int]float32, error) {
 	assets, err := r.Repo.GetAssetsByType(context.Background(), "Savings")
 	if err != nil {
 		return nil, err
 	}
 
-	pnlByAsset := make(map[string]float32)
+	pnlByAsset := make(map[int]float32)
 
 	for _, asset := range assets {
 		if asset.InterestRate == 0 || asset.Amount == 0 || asset.InterestStart.IsZero() {
@@ -93,18 +93,18 @@ func (r *ReturnsCalculator) CalculateInterestPL() (map[string]float32, error) {
 		yearsElapsed := monthsElapsed / 12
 		finalAmount := principal * math.Pow(1+interestRate/float64(compoundingPeriods), float64(compoundingPeriods)*yearsElapsed)
 		pl := finalAmount - principal
-		pnlByAsset[asset.Name] = float32(pl)
+		pnlByAsset[asset.ID] = float32(pl)
 	}
 
 	return pnlByAsset, nil
 }
 
-func (r *ReturnsCalculator) GoldReturns() (map[string]float32, error) {
+func (r *ReturnsCalculator) GoldReturns() (map[int]float32, error) {
 	gold, err := r.Repo.GetAssetsByType(context.Background(), "Gold")
 	if err != nil {
 		return nil, err
 	}
-	pnlByName := make(map[string]float32)
+	pnlByName := make(map[int]float32)
 
 	for _, g := range gold {
 		currentPrice, ok := r.cache.Get("goldPrice")
@@ -116,7 +116,7 @@ func (r *ReturnsCalculator) GoldReturns() (map[string]float32, error) {
 			return nil, err
 		}
 		pnl := (price - g.Price) * g.Amount
-		pnlByName[g.Name] += pnl
+		pnlByName[g.ID] += pnl
 	}
 	return pnlByName, nil
 }
