@@ -2,8 +2,6 @@ package handlers
 
 import (
 	"encoding/json"
-	"fmt"
-	"log"
 	"net/http"
 	"strconv"
 	"sync"
@@ -95,8 +93,6 @@ func (h *AssetHandler) GetReturns(w http.ResponseWriter, r *http.Request) {
 	go func() {
 		defer wg.Done()
 		goldReturns, err := h.ReturnCalculator.GoldReturns()
-		log.Println(goldReturns)
-		fmt.Println(goldReturns)
 		if err != nil {
 			errorChan <- err
 			return

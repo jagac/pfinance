@@ -3,9 +3,8 @@ package repositories
 import (
 	"context"
 	"database/sql"
+	"log"
 	"time"
-
-	"github.com/jagac/pfinance/internal/models"
 )
 
 type AssetReturnHistoryRepository struct {
@@ -17,13 +16,16 @@ func NewAssetReturnHistoryRepository(db *sql.DB) *AssetReturnHistoryRepository {
 }
 
 func (r *AssetReturnHistoryRepository) InsertAssetReturn(ctx context.Context, assetID int, returns float32, date *time.Time) error {
-	var inserted models.AssetReturn
-	query := `INSERT INTO asset_returns (asset_id, date, returns) VALUES ($1, COALESCE($2, CURRENT_DATE), $3)`
+	query := `INSERT INTO asset_returns (asset_id, date, returns)
+              VALUES ($1, COALESCE($2, CURRENT_DATE), $3)`
 
-	err := r.DB.QueryRowContext(ctx, query, assetID, date, returns).Scan(&inserted.ID, &inserted.AssetID, &inserted.Date, &inserted.Returns)
+	_, err := r.DB.ExecContext(ctx, query, assetID, date, returns)
 	if err != nil {
+		log.Println("Error inserting asset return:", err)
 		return err
 	}
+
+	log.Println("Inserted asset return successfully")
 	return nil
 }
 

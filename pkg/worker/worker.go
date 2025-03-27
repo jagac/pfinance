@@ -72,11 +72,13 @@ func (w *BackgroundWorker) Run(workerID string) {
 	for task := range w.queue {
 		w.logger.Info(workerID, "Running task", task.Name)
 		result, err := w.middleware(task.Job)(task.OriginContext)
-
+		if err != nil {
+			w.logger.Error(err.Error())
+		}
 		// Use the TTL from the task when storing the result in cache
 		ttl := task.TTL
 		if ttl == 0 {
-			ttl = 10 * time.Minute // Default TTL if none is provided
+			ttl = 10 * time.Minute
 		}
 
 		if err := w.resultCache.Set(task.Name, TaskResult{Value: result, Error: err}, ttl); err != nil {

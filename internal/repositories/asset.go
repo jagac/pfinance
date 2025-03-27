@@ -32,7 +32,7 @@ func (r *AssetRepository) GetAssetByID(ctx context.Context, id int) (*models.Ass
 	row := r.DB.QueryRowContext(ctx, query, id)
 
 	var asset models.Asset
-	err := row.Scan(&asset.ID, &asset.Type, &asset.Name, &asset.Ticker, &asset.Price, &asset.Amount,
+	err := row.Scan(&asset.ID, &asset.Name, &asset.Type, &asset.Ticker, &asset.Price, &asset.Amount,
 		&asset.Currency, &asset.InterestRate, &asset.CompoundingFrequency, &asset.InterestStart)
 
 	if err != nil {
@@ -54,7 +54,7 @@ func (r *AssetRepository) GetAllAssets(ctx context.Context) ([]*models.Asset, er
 	var assets []*models.Asset
 	for rows.Next() {
 		var asset models.Asset
-		err := rows.Scan(&asset.ID, &asset.Type, &asset.Name, &asset.Ticker, &asset.Price, &asset.Amount,
+		err := rows.Scan(&asset.ID, &asset.Name, &asset.Type, &asset.Ticker, &asset.Price, &asset.Amount,
 			&asset.Currency, &asset.InterestRate, &asset.CompoundingFrequency, &asset.InterestStart, &asset.CreatedAt)
 		if err != nil {
 			return nil, err
